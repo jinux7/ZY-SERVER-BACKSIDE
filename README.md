@@ -7,8 +7,9 @@
 node app
 执行完此命令后服务开启。
 注意：
-在目录public/下，存放的是前端展示部分打包后的代码，也就是 ZY-SHOW-FONTSIDE 这个项目build后的文件，pictures/文件夹是存放前台上传的
-图片的目录，访问地址：127.0.0.1：3030
-在目录manage/下，存放的是前端管理部分打包后的代码，也就是 ZY-MANAGE-FONTSIDE 这个项目build后的文件，访问地址：127.0.0.1:3030/manage
+在目录public/下，存放的是前端展示部分打包后的代码，也就是 ZY-SHOW-FONTSIDE 这个项目build后的文件，
+pictures/文件夹是存放前台上传的图片的目录，访问地址：127.0.0.1：3030
+在目录manage/下，存放的是前端管理部分打包后的代码，也就是 ZY-MANAGE-FONTSIDE 这个项目build后的文件，
+访问地址：127.0.0.1:3030/manage
 ```
 ---
