@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=360,  user-scalable=no">
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<title></title>
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://weix.ufile.ucloud.com.cn/weix/js/jquery-2.0.3.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+</head>
+<body>
+	<!--londing-->
+	<div id="load" class="weui_msg_img" >
+		<div class="weui-loading"></div>	
+	</div>
+	<!-- 内容 -->
+	<div class="container">
+		<!-- 积分 -->
+		<p class="integral f22"> 积分： <span>4</span>	</p>
+		<div>
+			<img src="image/title.jpg" width="100%">
+		</div>
+		<div>
+			
+	
+		<div class="gameBox">
+			<ul>
+				<li><img src="image/517day.png" title="517日有效流量 "></li>
+				<li><img src="image/card.png" title="游戏王卡（内含50元话费） "></li>
+				<li><img src="image/517mouth.png" title="517M月有效流量 "></li>
+				<li><img src="image/yk.png" title="视频会员 "></li>
+				<li><img src="image/5.17day.png" title="5.17G月有效流量 "></li>
+				<li><img src="image/17q.png" title="Q币 " ></li>
+				<li><img src="image/100day.png" title="100M有效流量包 "></li>
+				<li><img src="image/iphone.png" title="中国红Iphone7 "></li>
+				<li id="beginBtn"><img src="image/begin-btn.png"></li>
+			</ul>
+		</div>
+		</div>
+		<div class="btnBox">
+			<img id="ruleBtn" src="image/rule-btn.png" width="40%">
+			<img id="priceBtn" src="image/price-btn.png" width="40%">
+		</div>
+	</div>
+
+	<!-- 抽出的奖品 -->
+	<div class="black" id="reslutBlack">
+		<div class="pormptBox">
+			<div class="reslutBox">
+				<img src="image/price-bg.png" width="100%">
+				<img class="priceImg" src="" id="priceImg">
+				<p class="wordBox f14">
+					<b>
+						<!-- 恭喜你获得 <span id="priceName"></span><br>
+						可在<span class="f-red">我的奖品</span>中查看 -->
+						获得的奖品<br/>可在<span class="f-red">我的奖品</span>中查看
+					</b>
+				</p>
+				<p class="weui-btn bg-red" id="reslutBtn"><b>OK</b></p>
+			</div>
+			<div class="close f22"><b>&#10005;</b></div>
+			
+			
+
+		</div>
+	</div>
+	<!-- 活动规则  -->
+	<div class="black" id="ruleBlack">
+		<div class="pormptBox">
+			<div class="ruleBox">
+				<p><b>活动时间</b>&nbsp; &nbsp;5月17日</p>
+				<p><b>游戏规则</b></p>
+				<p>小伙伴们想进行抽奖需要消耗5积分。</p>
+				<p>积分获取方式：订购快餐包每消费1元可获得0.1积分；更劲爆的是辽宁联通今日推送的每一条图文都有大额免费积分送！！！</p>
+				<p>获得实物奖品的小伙伴儿们需要持奖品兑换券，点击“我的奖品”领取并填写个人信息和邮寄地址。因奖品贵重为了安全起见兑换时需要使用1积分确认身份，确认用户身份后即可兑换成功，客服人员会在7——15个工作日内与您确认邮寄地址；</p>
+
+			</div>
+			<div class="title f24"><b>活动规则</b></div>
+			<div class="close f22"><b>&#10005;</b></div>
+			
+			
+
+		</div>
+	</div>
+
+	<!-- 我的奖品  -->
+	<div class="black" id="priceBlack">
+		<div class="pormptBox">
+			<div class="ruleBox tcenter" >
+				<!-- <p>对不起	<br> 您还没有奖品	<br><br>		</p> -->
+				<p>
+					<img src="image/517day.png" title=" ">
+					<img class="getBtn" src="image/get-btn.png" width="65^">
+				</p>
+				<p>
+					<img src="image/517day.png" title=" ">
+					<img class="getBtn" src="image/get-btn.png" width="65^">
+				</p>
+				<p>
+					<img src="image/517day.png" title=" ">
+					<img class="getBtn" src="image/get-btn.png" width="65^">
+				</p>
+			</div>
+			<div class="title f24"><b>我的奖品</b></div>
+			<div class="close f22"><b>&#10005;</b></div>
+		
+		</div>
+	</div>
+
+	<!-- 邮寄信息 -->
+	<div class="black" id="infoBlack" >
+		<div class="pormptBox">
+			<div class="ruleBox  infoBox" >
+				<p><b>真实姓名</b><input type="text" id="name" placeholder="请输入获奖人姓名" ><span>&#10005;</span></p>
+				<p><b>电话号码</b><input type="tel" id="telNumber" placeholder="请输入获奖人电话号码"maxlenght="11"><span>&#10005;</span></p>
+				<p><b>身份证号</b><input type="text" id="idNumber" placeholder="请输入获奖人身份证号" maxlenght="21"><span>&#10005;</span></p>
+				<p><b>邮寄地址</b><textarea name="" id="address" rows="4" placeholder="请输入邮寄地址"></textarea><span>&#10005;</span></p>
+				<div class="f-red">
+					温馨提示：<br/>
+					<span class="f14">亲爱的用户，恭喜您获得大奖，因奖品价值较高在此需消耗您1积分确认中奖身份。</span>
+				</div>
+
+				<img src="image/submit-btn.png" width="50%" id="infoSubmit">
+			</div>
+			<!-- <div class="close f22"><b>&#10005;</b></div> -->
+		</div>
+	</div>
+	<!-- 兑换码 -->
+	<div class="black" id="numBlack" >
+		<div class="pormptBox">
+			<div class="ruleBox tcenter">
+				<p> 
+					流量兑换码 <br>
+					123456789012 <br><br>
+				</p>
+
+			</div>
+			<div class="title f24"><b>兑换码</b></div>
+			<div class="close f22"><b>&#10005;</b></div>
+			
+			
+
+		</div>
+	</div>
+
+
+
+</body>
+</html>
+<script>
+	$(function(){
+		// 活动规则按钮
+		$("#ruleBtn").click(function(){
+			$("#ruleBlack").show();
+		})
+		// 我的奖品按钮
+		$("#priceBtn").click(function(){
+			$("#priceBlack").show();
+		})
+		// 结果页ok关闭按钮
+		$("#reslutBtn").click(function(){
+			$("#priceBlack,#reslutBlack").hide();
+		})
+		// 关闭按钮
+		$(".close").click(function(){
+			$("#ruleBlack, #priceBlack,#reslutBlack").hide();
+
+		})
+
+		$(".getBtn").click(function(){
+			$("#infoBlack").show();
+		})
+
+		// 输入框验证
+		function valSubmit(){
+			// 姓名不能为空 不能为空格
+			var name = $("#name").val();
+			if(name.length == 0 || name.indexOf(" ") >= 0){
+				$("#name").next().show();
+				return;
+			}else{
+				$("#name").next().hide();
+			}
+			// 电话不能为空 不能为空格
+			var telNumber= $("#telNumber").val();
+			if(telNumber.length == 0 || telNumber.indexOf(" ") >= 0){
+				$("#telNumber").next().show();
+				return;
+			}else{
+				$("#telNumber").next().hide();
+			}
+
+			// f身份证不能为空 
+			var idNumber= $("#idNumber").val();
+			if(idNumber.length == 0 || idNumber.indexOf(" ") >= 0){
+				$("#idNumber").next().show();
+				return;
+			}else{
+				$("#idNumber").next().hide();
+			}
+
+			// 地址不能为空 
+			var address= $("#address").val();
+			if(address.length == 0 || telNumber.indexOf(" ") >= 0){
+				$("#address").next().show();
+				return;
+			}else{
+				$("#address").next().hide();
+			}
+
+			// 提交
+
+		}
+
+		// 输入框值空
+		function clearForm() {
+	        $("input").val("");
+	    };
+	    clearForm();
+
+		// 信息提交按钮
+		$("#infoSubmit").click(function(){
+			valSubmit();
+
+		})
+
+
+		var istrue = 0;
+		$("#beginBtn").click(function(){
+			// $("#load").show();
+			var circleNum = 0;
+			var eqNum = 0;
+			if(istrue == 1) return;
+			var xNum =2;//中奖数字
+			istrue = 1;
+			var t = setInterval(function(){
+				if(circleNum == 3){ //2圈后停止
+					clearInterval(t);
+					eqNum = 0;
+					var tx = setInterval(function(){
+						if(eqNum == xNum){
+							// $("#beginBtn").css("background","#feda24");
+							clearInterval(tx);
+							istrue = 0;
+							var priceName = $(".gameBox li").eq(xNum - 1).children("img").attr("title");
+							var pricesrc = $(".gameBox li").eq(xNum - 1).children("img").attr("src");
+							// $("#reslutBlack #priceName").text(priceName)
+							$("#reslutBlack #priceImg").attr("src",pricesrc)
+							$("#reslutBlack").delay(200).fadeIn();
+							return;
+						}
+						$(".gameBox li").css("border","none");
+						$(".gameBox li").eq(eqNum).css("border","2px solid #fff89d");
+						eqNum ++;
+					},100)
+				}
+				if(eqNum >= 8){
+					eqNum = 0; 	
+					circleNum ++;
+				}
+				$(".gameBox li").css("border","none");
+				$(".gameBox li").eq(eqNum).css("border","2px solid #fff89d");
+				eqNum ++;
+				
+			},100)	
+		})
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+	})
+	
+</script>
+

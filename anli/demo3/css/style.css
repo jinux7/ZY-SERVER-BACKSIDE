@@ -1,0 +1,467 @@
+html,body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	font-size: 0.9rem;
+}
+/*loading 加载样式*/
+.loading{
+	display:block;
+	position: fixed;width:100%;height: 100%;z-index: 45;background:#ff2252;top:0;left:0;}
+.logo{ 
+		position: absolute;
+		top: 20%;
+		left: 7.5rem;
+		width: 5.125rem;
+		height: 3.875rem;
+	}
+.scroll-box{
+	position: absolute;
+	top: 42%;
+	width:11.25rem;
+	height:1.375rem;border:1px solid #ff9700;background:#fff;border-radius: 30px;margin-left:18%;}
+.scroll-box div{
+	position: absolute;
+}
+.scroll-bar{
+	top:0;
+	left:0;
+	width:70%;
+	background:#ff9700;height:1.375rem;
+	border-radius: 30px 0 0 30px;
+	-webkit-animation:bar 1.5s linear ;
+	animation:bar 1.5s linear ;
+}
+.scroll-bar.over {
+	width: 100%;
+	transition: width .2s ease-in 0s;
+}
+@-webkit-keyframes bar{ 0%{width:0;} 100%{width:70%;} }
+@keyframes bar{ 0%{width:0;} 100%{width:70%;} }
+.scroll-bg{top:0;left:0;width:100%;height:100%;background:url("../images/loading_bg.png");}
+.load-redbag{
+	top:-55px;
+	left:50%;
+	width:80px;
+	height:60px;
+	background:url("../images/loading_redbag.png") no-repeat;
+	background-size:85%;
+	-webkit-animation:redbag 1.5s linear  ;
+	animation:redbag 1.5s linear ;
+}
+.load-redbag.over {
+	left: 80%;
+	transition: left .2s ease-in 0s;
+}
+@-webkit-keyframes redbag{ 
+	0%{left:-20%;} 
+	100%{left:50%;} 
+}
+@keyframes redbag{ 
+	0%{left:-20%;} 
+	100%{left:50%;} 
+}
+.load-head{
+	left:76%;
+	top:-30px;
+	width:4.5rem;
+	height:4.5rem;
+	background:url("../images/loading_head.png") no-repeat;background-size:80%;
+	-webkit-animation:loadhead 4s linear infinite;
+	animation:loadhead 4s linear infintte;}
+@-webkit-keyframes loadhead{ 
+	0%{transform:rotate(-15deg);
+		-webkit-transform:rotate(-15deg)} 50%{transform:rotate(15deg);-webkit-transform:rotate(15deg)} 100%{transform:rotate(-15deg);-webkit-transform:rotate(-15deg)} }
+@keyframes loadhead{ 0%{transform:rotate(-15deg);-webkit-transform:rotate(-15deg)} 50%{transform:rotate(15deg);-webkit-transform:rotate(15deg)} 100%{transform:rotate(-15deg);-webkit-transform:rotate(-15deg)} }
+.load-num{color:#fff;top:6px;left:30%;}
+
+/*规则开始页面*/
+.i-content{
+	display: block;
+	color:#fff;overflow:hidden;width:100%;height:100%;background:url("../images/bg.jpg") no-repeat #ff2252;
+	background-size: 100% 100%;}
+.i-content span{
+	text-align:center;
+	width:100%;display: 
+	block;background: #ff8500;
+	border-radius: 1rem;
+}
+.i-topbtn{position:absolute;width:28%;height:auto;right:4%;}
+.i-content span{height:1.5rem;
+	line-height: 1.5rem;
+	margin-top:1rem;
+	background:rgba(255,143,32,0.75);}
+.begin-btnbox{
+	text-align:center;
+	position:absolute;
+	width:50%;height:
+	auto;top:62%;
+	left:25%;
+	border-radius: 1rem;}
+.begin-btnbox span{
+	font-size:1.3em;
+	height:2rem;
+	line-height:2rem;
+	margin-bottom:10%;
+}
+
+/*活动规则页面*/
+#hdgz {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+#hdgz .content {
+	position: relative;
+	box-sizing:border-box;
+	padding: 15% 0 0.7rem;
+	width: 80%;
+	margin: 10% auto;
+
+}
+#hdgz .content > span {
+	position: absolute;
+	line-height: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #000000;
+    border-radius: 1rem;
+	text-align: center;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+#hdgz .content h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+#hdgz .content p {
+	margin-bottom: 0.3rem;
+}
+/*我的奖品页面*/
+#wdjp {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	background-color: #FF2252;
+}
+#wdjp > div {
+	padding: 1.5rem;
+	color: #fffcbb;
+}
+#wdjp > div > span.close {
+	position: absolute;	position: absolute;
+	line-height: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+	text-align: center;
+	top: 0.5rem;
+	right: 0.5rem;
+	color: #ffffff;
+}
+#wdjp > div > h2 {
+	text-align: center;
+    margin-bottom: 1rem;
+    background-image: url(../images/modal_bg_cloud.png);
+    /* background-size: 150% 100%; */
+    background-position: 53% -.2rem;
+    font-size: 1.1rem;
+}
+#wdjp > div > .wdjp_jpList {
+	margin-bottom: 1rem;
+}
+#wdjp > div > p.btn_p {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+#wdjp > div > p.btn_p > a {
+	padding: 0.3rem 3rem;
+    border-radius: 5rem;
+    background-color: #ff8500;
+    color: #FF2253;
+    display: inline-block;
+    margin: 0.25rem 0;
+    color: #ffffff;
+}
+#wdjp > div > .wdjp_jpList > .myPresent {
+	display: block;
+    height: 5rem;
+    background: url(../images/3gstream_bg.png);
+    background-size: 100% 100%;
+    color: #FF2253;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+    margin-bottom: 0.3rem;
+    position: relative;
+    padding-top: 0.2rem;
+}
+#wdjp > div > .wdjp_jpList > .myPresent >h3 {
+	text-align: center;
+	font-size: 1.2rem;
+}
+#wdjp > div > .wdjp_jpList > .myPresent >b {
+	display: block;
+    width: 80%;
+    margin: 0.2rem auto;
+}
+
+/*#wdjp {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	position:absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+#wdjp .content {
+	position: relative;
+	box-sizing:border-box;
+	padding: 15% 0 0.7rem;
+	width: 80%;
+	margin: 10% auto;
+
+}
+#wdjp .content span {
+	position: absolute;
+	line-height: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #000000;
+    border-radius: 1rem;
+	text-align: center;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+#wdjp .content h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+#wdjp .content h3 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+#wdjp .content p {
+	margin-bottom: 0.3rem;
+}*/
+/*游戏结束获奖页面*/
+#hj {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 12;
+	overflow: hidden;
+}
+#hj h2 {
+	height: 2rem;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+}
+#hj .content {
+	position: relative;
+	box-sizing:border-box;
+	padding: 15% 0 .7rem;
+	width: 80%;
+	margin: 10% auto;
+
+}
+/*游戏结束未获奖页面*/
+#whj {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 12;
+	overflow: hidden;
+}
+#whj h2 {
+	height: 2rem;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+}
+#whj .content {
+	position: relative;
+	box-sizing:border-box;
+	padding: 15% 0 0.7rem;
+	width: 80%;
+	margin: 10% auto;
+	overflow: hidden;
+
+}
+/*弹出框公共样式*/
+.modal_bg_wrap {
+	background: url(../images/modal_bg_flower.png);
+	background-image: url(../images/modal_bg_flower.png);
+    /* background-repeat: no-repeat; */
+    background-color: rgba(0,0,0,.7);
+    background-size: 100%;
+}
+.modal_bg_inner {
+	background-image: url(../images/modal_bg_up.png),url(../images/modal_bg_down.png);
+	background-size: 100% ,100%;
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0 0,0 bottom;
+}
+.modal_bg_inner > div {
+	background-color: #FF2252;
+	margin-top: 5.2rem;
+    width: 14.2rem;
+    margin: 5.32rem auto 0;
+    padding: 0 1rem 1rem;
+    box-sizing: border-box;
+    color: #fffcbb;
+    max-height: 18rem;
+    overflow: auto;
+}
+.modal_bg_inner > div >h2 {
+	background-image: url(../images/modal_bg_cloud.png);
+	background-size: 150% 100%;
+    background-position: 55% top;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.modal_bg_inner > span {
+	color: #ffffff;
+	border-color: #ffffff !important;
+}
+.modal_bg_inner > div > strong.myPresent {
+	display: block;
+    width: 12.2rem;
+    height: 4.35rem;
+    background:url(../images/3gstream_bg.png);
+    background-size: 100% 100%;
+    color: #FF2253;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+.modal_bg_inner > div > strong.myPresent > strong {
+	position: absolute;
+    top: 0.1rem;
+    left: 3rem;
+    font-size: 1rem;
+}
+.modal_bg_inner > div > strong.myPresent > b {
+	display: block;
+	line-height: 1.2rem;
+	width: 10.5rem;
+
+}
+.modal_bg_inner h2 div.score {
+	display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 7rem;
+    background-color: #fffcbb;
+    position: relative;
+    top: -1.7rem;
+    text-align: center;
+}
+.modal_bg_inner h2 div.score > b {
+	color: #FF2252;
+    font-size: 0.5rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+.modal_bg_inner h2 div.score > i {
+	color: #FF2252;
+    font-size: 2.1rem;	
+    display: inline-block;
+    margin-top: 0rem;
+}
+.modal_bg_inner > div > p.btn_p {
+	text-align: center;
+}
+.modal_bg_inner > div > p > a {
+	padding: 0.3rem 1.5rem;
+    border-radius: 5rem;
+    background-color: #ff8500;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0.25rem 0;
+}
+
+
+/*游戏页面*/
+#panel {
+	position: relative;
+	display: none;
+	height: 100%;
+	overflow: hidden;
+	background: url(../images/gamePanelBg.jpg) no-repeat;
+	background-position: 0 bottom;
+	background-size: 103%;
+	background-color: #a726f5;
+}
+#panel a { 
+	position: absolute;
+	left: 0; 
+	top: -2.187rem;;
+	width: 4.06rem;
+	height: 2.187rem;
+	z-index: 10;
+}
+#panel a span {
+	position: absolute;
+	top: -2rem;
+	left: 1.8rem;
+	color: #ffffff;
+	font-size: 1.5rem;
+}
+#panel a span.active {
+	animation:score 2s ease;
+}
+
+@keyframes score {
+	0%{ opacity: 1}
+	100%{ opacity: 0}
+}
+@-webkit-keyframes score {
+	0%{ opacity: 1}
+	100%{ opacity: 0}
+}
+#panel .time {
+	position: absolute;
+	width: 5.52rem;
+    height: 1.56rem;
+    background: #ef3030;
+    border-radius: 1rem;
+    top: 2rem;
+    left: 1rem;
+    text-align: center;
+    line-height: 1.56rem;
+    color: #ffffff;
+}
+#panel .showScore {
+	position: absolute;
+	width: 5.52rem;
+    height: 1.56rem;
+    background: #ef3030;
+    border-radius: 1rem;
+    top: 2rem;
+    left: 8rem;
+    text-align: center;
+    line-height: 1.56rem;
+    color: #ffffff;
+}

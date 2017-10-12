@@ -1,0 +1,158 @@
+html,body {
+	min-height: 100%;
+	background-color: #250e03;
+}
+.wrapper {
+	background-image: url('../images/background_img.jpg');
+	background-size: 100%;
+	position: relative;
+}
+.wrapper .score {
+	position: absolute;
+    top: 3.19rem;
+    left: 16.25rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1rem;
+    letter-spacing: 0.12rem;
+    text-shadow: 0 0 5px #CF7C20;
+}
+.wrapper .baoBox {
+	position: absolute;
+	width: 9.375rem;
+	height: 8.0625rem;
+	background-image: url('../images/baoBox_img.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	top: 13.6rem;
+	left: 5.8rem;
+}
+.wrapper .ruleBtn {
+	position: absolute;
+	width: 4.375rem;
+	height: 1.656rem;
+	top: 2.97rem;
+	left: 1.97rem;
+}
+.wrapper input {
+	position: absolute;
+	width: 7.66rem;
+	height: 1.75rem;
+	border: none;
+	top: 26.7rem;
+	left: 5.625rem;
+	background-color: transparent;
+	font-size: 1rem;
+	line-height: 1rem;
+	padding-left: 0.5rem;
+}
+.wrapper .submitBtn {
+	position: absolute;
+	width: 2.94rem;
+	height: 2.25rem;
+	top: 26.375rem;
+	left: 14.375rem;
+}
+.wrapper .myPresentBtn {
+	position: absolute;
+	width: 6.875rem;
+	height: 2.1875rem;
+	top: 29.4375rem;
+	left: 6.3125rem;
+}
+/***弹出层***************/
+.modal_box {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.65);
+	font-family: 'microsoft yahei';
+}
+.modal_box .contain {
+	position: relative;
+	width: 13.7rem;
+	margin: 5rem auto 0;
+}
+.modal_box .contain h3 {
+	height: 4.875rem;
+	background-image: url('../images/crown_img.png');
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+	position: relative;		
+	z-index: 2;
+}
+.modal_box .contain .text {
+	min-height: 13.625rem;
+	background-color: #ec9309;
+	border-radius: 10px;
+	margin-top: -0.2rem;
+	overflow-y: auto;
+    max-height: 18rem;
+}
+.modal_box .contain .text h5 {
+	font-size: 1.2rem;
+	width: 10.25rem;
+	margin: 0 auto;
+    padding: 1rem 0 0.2rem 0;
+    text-align: center;
+    line-height: 2rem;
+    border-bottom: 0.15rem solid #000000;
+}
+.modal_box .contain .text p {
+	padding: 0.5rem 0.6rem;
+}
+.modal_box .contain span.close_modal_box {
+	position: absolute;
+	width: 1.47rem;
+	height: 1.47rem;
+	background-image: url('../images/cancel_img.png');
+	background-size: cover;
+	top: 4rem;
+    right: -0.5rem;
+    z-index: 5;
+}
+
+/**shake******************************/
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  animation:shake 1s infinite;
+}
+/**end shake**************************/

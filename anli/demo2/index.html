@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>撕名牌游戏</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<meta content="email=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link type="text/css" rel="stylesheet" href="css/common.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/animate.css" />
+<script src="js/viewport.js"></script>
+<script src="js/zepto.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+
+<body id="smp">
+    <style>
+        #yuanbao_down {
+            position: fixed;
+            width: 100%;
+            top: -100%;
+            left: 0;
+            z-index: 2;
+           
+        }
+        .yuanbao_down_active {
+             -webkit-animation:yuanbao_down 4s ease-in forwards;
+            animation:yuanbao_down 4s ease-in forwards;
+        }
+        @-webkit-keyframes yuanbao_down{
+            0%{-webkit-transform:translateY(0);}
+            100%{-webkit-transform:translateY(200%);}
+        }
+        @keyframes yuanbao_down{
+            0%{transform:translateY(0);}
+            100%{transform:translateY(200%);}
+        }
+    </style>
+    <img id="yuanbao_down" src="./images/yuanbao_down.png" />
+    <!--加载mask层-->
+    <div id="maskLoad">
+        <div class="blackBox">
+            <div class="la-ball-spin-clockwise la-2x">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    
+    <!--加载mask层-->
+    <div class='wrap'>
+		
+		<div class="denglong">
+			<img src="./images/denglong.png">
+		</div>
+
+    	<div class="mingpaiArea">
+    		<ul>
+    			<li class="mp ybg">
+    				<img src="./images/yejiao.png" />
+    				<span>鸡年大吉</span>
+    			</li>
+    			<li class="mp jbg">
+    				<img src="./images/yejiao.png" />
+    				<span>万事如意</span>
+    			</li>
+    			<li class="mp ybg">
+    				<img src="./images/yejiao.png" />
+    				<span>心想事成</span>
+    			</li>
+    			<li class="mp jbg">
+    				<img src="./images/yejiao.png" />
+    				<span>合家欢乐</span>
+    			</li>
+    			<li class="mp jbg">
+    				<img src="./images/yejiao.png" />
+    				<span>身体健康</span>
+    			</li>
+    			<li class="mp jbg">
+    				<img src="./images/yejiao.png" />
+    				<span>财源滚滚</span>
+    			</li>
+    			<li class="mp ybg">
+    				<img src="./images/yejiao.png" />
+    				<span>五福临门</span>
+    			</li>
+    			<li class="mp jbg">
+    				<img src="./images/yejiao.png" />
+    				<span>大吉大利</span>
+    			</li>
+    			<li class="mp ybg">
+    				<img src="./images/yejiao.png" />
+    				<span>福满乾坤</span>
+    			</li>
+    		</ul>
+    	</div>
+    	<div class="btnArea">
+    		<p class="btn cjjl">抽奖记录</p>
+    		<p class="btn wdjp">我的奖品</p>
+    	</div>
+
+    	<div class="zjjuArea">
+    		<div class="hdgz">
+				<p>活动规则</p>
+    		</div>
+    		<h2>中奖纪录</h2>
+    		<div class="textcontent">
+    			<div class="scrollup">
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!--加载音乐效果-->
+    <audio src="./audio/music.mp3" id="music"></audio>
+    <!--<audio src="http://dx.sc.chinaz.com/Files/DownLoad/sound1/201409/4940.mp3" id="music">-->
+</body>
+<script src="js/controller.js"></script>
+
+</html>

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+html,body,form,input,select,textarea,div,p,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em { margin:0; padding:0;}
+img{border:none;}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, li,ol { list-style:none; }
+dl,dt,dd{list-style:none;float:left;}
+a,a:hover {
+  text-decoration:none;
+  outline:none;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+}
+html,body  {
+  height:360px;margin:auto;
+}
+body {
+  position: relative;
+  font-family:"微软雅黑";
+  font-size:1em;
+  color: black;
+  max-width:360px;
+  height:auto;
+  background:#f0273a;
+  background-size:360px;
+  color:#fff;
+
+}
+
+.black{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.72);}
+/*主页*/
+.weui-loading{width:50px;height:50px;margin-top:150px;}
+.integral{position: absolute;top:97px;right:20px;color:#fff;}
+/*游戏区*/
+.gameBox{overflow:hidden;position:relative;width:92%;height:340px;margin:-60px auto 0;background:url("../image/boxbg.gif") no-repeat;background-size:100%;}
+.gameBox ul{position:relative;width: 74%;height: 246px;margin: 45px 14%}
+.gameBox ul li{position:absolute;display:inline-block; width:74px;height:70px;line-height:100px;background:#fc7f3f;border-radius: 6px;text-align: center;box-sizing:border-box;-webkit-box-sizeng:border-box;}
+.gameBox ul li img{width:80%;}
+.gameBox ul li:nth-child(1){top:6px;left:6px;}
+.gameBox ul li:nth-child(2){top:6px;left:88px;}
+.gameBox ul li:nth-child(3){top:6px;left:170px;}
+.gameBox ul li:nth-child(8){top:87px;left:6px;}
+.gameBox ul li:nth-child(4){top:87px;left:170px;}
+.gameBox ul li:nth-child(7){top:168px;left:6px;}
+.gameBox ul li:nth-child(6){top:168px;left:88px;}
+.gameBox ul li:nth-child(5){top:168px;left:170px;}
+.gameBox ul li:nth-child(9){top:87px;left:88px;background:none;}
+.gameBox ul li:nth-child(2) img{width:110%;margin-top:10px}
+.gameBox ul li:nth-child(6) img{width:110%;margin-top:10px}
+.gameBox ul li:nth-child(8) img{width:110%;margin-top:10px}
+.gameBox ul li:nth-child(9) img{width:100%;}
+
+/*按钮*/
+.btnBox{width:80%;text-align: center;margin:0 auto;}
+.btnBox img:nth-child(2){margin-left:10%;}
+
+
+/*活动规则*/
+.pormptBox{position:relative;width:88%;margin: 30px auto 0 }
+.pormptBox .title{position:absolute;top:0;left:0;width:100%;height:66px;background: url("../image/prompt-title.png") no-repeat;background-size:100%;text-align: center;line-height: 56px;color:#fee739;}
+.pormptBox .close{position:absolute;top:0;right:5px;width:30px;background: rgba(255,255,255,.5);border-radius: 50px;color:#000000;text-align: center;line-height: 30px}
+.ruleBox{position:absolute;top:40px;left:0;width:90%;padding:45px 5% 5px ;background:#fee739;border-radius:10px;color:#444444;}
+
+
+
+
+/*查看奖品*/
+#priceBlack p {width:220px;margin:10px auto;}
+#priceBlack p img:last-child{float: right;margin-top:10px;}
+#infoBlack .pormptBox{margin-top:0px;}
+.infoBox p{position:relative;width:100%;background: #fff;height:35px;line-height: 35px;margin-bottom: 15px}
+.infoBox p b{display: inline-block;width:30%;text-align: center;}
+.infoBox p input,.infoBox p textarea {width:68%;outline: none;height:35px;line-height: 35px;border:none;font-size: 16px}
+.infoBox p:nth-child(4){height:105px;}
+.infoBox p:nth-child(4) b{float:left;}
+.infoBox p textarea {height:105px; resize:none; }
+.infoBox p span{display:none;color:red;margin-left:10px;position: absolute;right:10px;top:0;}
+#infoSubmit{margin:15px 25% 5px;}
+
+
+
+/*结果页*/
+.reslutBox{width:90%;height:264px;margin:150px auto 0;background: #fff;border-radius: 13px;text-align: center;}
+#reslutBlack .close{right:18px;background: none}
+.reslutBox .wordBox{color:#373737;line-height: 20px}
+#reslutBtn{width:50%;height: 30px;margin:5px auto;line-height: 30px;border-radius: 10px}
+.priceImg{position:absolute;top:50px;left:0;right: 0;margin:0 auto;width:40%;}
+
+

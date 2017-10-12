@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=360,  user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<title>双11转转乐</title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	
+<body>
+<!--londing-->
+	<div class="load-box">
+		<div class="loadEffect">
+		    <i class="fa fa-spinner fa-pulse"></i>
+		</div>
+	</div>
+	
+<!-- 错误弹窗 -->
+	<div class="promit-black" >
+		<div class="promit">
+			<div class="close ">X</div>
+			<div class="promit-top">温馨提示</div>
+			<div class="promit-word">对不起,<br>您的抽奖机会已用完！</div>
+		</div>
+	</div>
+<!-- 剩余数量 -->
+	<div class="mun-box">
+		积分剩余：2000
+	</div>
+
+
+<!-- 老虎机 -->
+	<div class="top"><img src="image/top.png" width="100%"></div>
+	<div class="game-box">
+		<!-- 滚动获奖名单 -->
+		<div class="prizename-box">
+			<div class="prizename">
+				恭喜:BOBO获得了1111M月有效流量<br/>
+				恭喜:二美获得了1111M月有效流量<br/>
+				恭喜:大管家获得了月有效流量<br/>
+				恭喜:巨蟹座&男获得了月有效流量<br/>
+				恭喜:快乐的老孙获得了月有效流量<br/>
+				恭喜:莲儿获得了月有效流量<br/>
+				恭喜:流浪的小孩获得了月有效流量<br/>
+				恭喜:小蘑菇获得了月有效流量<br/>
+				恭喜:粘人精获得了月有效流量<br/>
+				恭喜:浮夸~获得了月有效流量<br/>
+				恭喜:大乐乐获得了月有效流量<br/>
+				恭喜:红袖获得了月有效流量<br/>
+				恭喜:飞翔的巴西人获得了月有效流量<br/>
+				恭喜:Joyce获得了月有效流量<br/>
+				恭喜:吴晓晓获得了月有效流量<br/>
+				恭喜:起啥名好呢获得了月有效流量<br/>
+				恭喜:胡子获得了月有效流量<br/>
+				恭喜:meng获得了月有效流量<br/>
+				恭喜:装作很文艺获得了月有效流量<br/>
+				恭喜:ZM获得了月有效流量<br/>
+				恭喜:内小孩儿获得了月有效流量<br/>
+				恭喜：奇拉慕获得了小米手机<br/>
+				恭喜：未夏获得了小米手机<br/>
+				恭喜：A小竹笋获得了天猫魔盒<br/>
+				恭喜：国际范二获得了天猫魔盒<br/>
+				恭喜：MINIE获得了天猫魔盒<br/>
+				恭喜：慕容雪获得了月有效流量<br/>
+				恭喜：清风明月获得了月有效流量<br/>
+				恭喜：年华似水获得了天猫魔盒<br/>
+				恭喜：素食主义获得了天猫魔盒<br/>
+				恭喜：陈米苏获得了天猫魔盒<br/>
+				恭喜：未来由自己获得了小米手机<br/>
+				恭喜：Cory获得了小米手机<br/>
+				恭喜：海华华获得了小米手机<br/>
+				恭喜：包子妹妹获得了天猫魔盒<br/>
+				恭喜：Kelly获得了天猫魔盒<br/>
+				恭喜：大圆圆获得了天猫魔盒<br/>
+			</div>
+		</div>
+		<div class="game-border">
+			<div class="game-row">
+				<span class="game1" >
+					<ul>
+						<li class="img1"></li>
+						<li class="img2"></li>
+						<li class="img3"> </li>
+						<li class="img1"></li>
+					</ul>
+				</span>
+				<span class="game2">
+					<ul>
+						<li class="img1"></li>
+						<li class="img2"></li>
+						<li class="img3"> </li>
+						<li class="img1"></li>
+					</ul>
+				</span>
+				<span class="game3">
+					<ul>
+						<li class="img1"></li>
+						<li class="img2"></li>
+						<li class="img3"> </li>
+						<li class="img1"></li>
+					</ul>
+				</span>
+			</div>
+		</div>
+		<div class="begin-btn"></div>
+		<div class="btn-box">
+			<span class="rule-btn">活动说明</span>
+			<span class="gift-btn">我的奖品</span>
+			<span >订购得积分</span>
+		</div>
+	</div>
+	<div class="bottom"><img src="image/bottom.png" width="100%"></div>
+	
+	
+<!-- 活动规则 -->
+	<div class="rule-black">
+		<div class="rule">
+			<div class="close ">X</div>
+			<div class="word-box">
+				<ul>
+					活动奖品
+					<li>一等奖：小米手机一部</li>
+					<li>二等奖：天猫魔盒一个</li>
+					<li>三等奖：1111M月有效流量包一个</li>
+				</ul>
+				<ul>
+					活动时间
+					<li>2016年11月11日</li>
+				</ul>
+				<ul>
+					活动说明
+					<li>每消耗0.1积分可在转转乐获得一次抽奖机会； </li>
+					<li>获得小米手机/天猫魔盒的用户，联通微信工作人员将在7——15个工作日内与您确认邮寄地址。</li>
+					<li>流量奖品均为11月11日—11月30日有效流量兑换码，11月11日12:00可开始兑换</li>
+					<li>流量产品兑换后次日生效，11月30日23:59失效；注：如在当月最后一天兑换则兑换的流量不生效</li>
+					<li> 
+						月流量产品仅限沃派标准套餐用户及46元以上（含46元）标准3G用户和76元以上（含76元）标准4G用户才可使用（融合业务用户暂不可使用，4G主副卡不共享）。
+					</li>
+					<li>所有流量产品均为辽宁省内流量，不可出省使用，兑换码所兑换的流量产品不参与结转；</li>
+					<li>每个手机号码只能领取一次同流量产品，如从其他渠道获得相同流量产品，则不能重复获得。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- 游戏等待 -->
+	<div class="wait-black">
+		<div class="wait-box ">
+			请稍等。。。
+			<div class="wait-load">
+				 <i class="fa fa-spinner fa-pulse"></i>
+			</div>
+		</div>
+	</div>
+
+<!-- 转出的奖品弹窗 -->
+	<!-- 没有机会玩 -->
+	<div class="rotate-gift-black gift-no" >
+		<div class="close gift_close">X</div>
+		<div class="rg-word-box">
+			<p style="margin-top:40%;">真可惜~~差一点就中奖了……</p>
+		</div>
+	</div>
+	<!-- 手机 -->
+	<div class="rotate-gift-black gift-phone" >
+		<div class="close gift_close">X</div>
+		<img src="image/gift-phone.png" width="100%">
+		<div class="rg-word-box">
+			<p class="yellow-word title">恭喜您获得小米手机</p>
+			<p>联通微信工作人员会在<span class="yellow-word">7—15</span>个工作日内与您确认邮寄地址。</p>
+		</div>
+	</div>
+
+	<!-- 魔盒 -->
+	<div class="rotate-gift-black gift-box" >
+		<div class="close gift_close">X</div>
+		<img src="image/gift-box.png" width="100%">
+		<div class="rg-word-box">
+			<p class="yellow-word title">恭喜您获得天猫魔盒</p>
+			<p>联通微信工作人员会在<span class="yellow-word">7—15</span>个工作日内与您确认邮寄地址。</p>
+		</div>
+	</div>
+
+	<!-- 流量 -->
+	<div class="rotate-gift-black gift-m" >
+		<div class="close gift_close">X</div>
+		<img src="image/gift-m.png" width="100%">
+		<div class="rg-word-box">
+			<p class="yellow-word title">恭喜您获得1111M月有效流量包！</p>
+			<p style="margin:.5% 0 1% 0;">您的兑换码为123456789012。</p>
+			<p>点击下方兑换按钮即可兑换。
+				流量奖品为月有效流量兑换码，流量产品兑换后次日生效，当月有效，11月30日23:59失效；注：如在当月最后一天兑换则兑换的流量不生效
+				本流量产品仅限11.11-11.29日兑换，逾期不可兑换。
+				得到多个1111M流量兑换码，同一手机号码只可兑换一次。
+				因套餐属性及订购规则限制，可能存在部分号码无法领取或使用。
+			</p>
+			<div class="m-btm">立即兑换</div>
+		</div>
+	</div>
+
+	
+
+	
+	<!-- 没有奖 -->
+	<div class="rotate-gift-black change-no" >
+		<div class="close gift_close">X</div>
+		
+		<div class="rg-word-box">
+			<p style="margin-top:40%;">您当前还没有获得奖品哦~快去点击转转乐抽取海量大奖吧！</p>
+		</div>
+	</div>
+
+<!-- 查看奖品 -->
+	<div class="look-black">
+		<div class="close gift_close" style="top:0;left:88%;width:30px;height:30px;">X</div>
+		<!-- 手机 -->
+		<div class="look-phone clearfix">
+			<div class="look-left">
+				<img src="image/gift-phone.png" width="100%">
+			</div>
+			<div class="look-right">
+				<p><b style="font-size:1.1em;">恭喜您获得小米手机一台</b></p>
+				<p style="margin-top:.5%;">联通微信工作人员会在7—15个工作日内与您确认邮寄地址。</p>
+			</div>
+		</div>
+		<!-- 天猫魔盒 -->
+		<div class="look-box clearfix">
+			<div class="look-left">
+				<img src="image/gift-box.png" width="100%">
+			</div>
+			<div class="look-right">
+				<p><b style="font-size:1.1em;">恭喜您获得天猫魔盒一个</b></p>
+				<p style="margin-top:.5%;">联通微信工作人员会在7—15个工作日内与您确认邮寄地址。</p>
+			</div>
+		</div>
+		<!-- 流量 -->
+		<div class="look-m clearfix">
+			<div class="look-left">
+				<img src="image/gift-m.png" width="100%">
+			</div>
+			<div class="look-right">
+				<p><b style="font-size:1.1em;">恭喜您获得1111M月有效流量包</b></p>
+				<p style="margin:.5% 0 1% 0;">您的兑换码为123456789012。</p>
+			</div>
+			<div class="m-btm">立即兑换</div><br/>
+			<p style="margin-top:2%;"> 	
+				温馨提示：<br/>
+				1、流量奖品为月有效流量兑换码，流量产品兑换后次日生效，当月有效，11月30日23:59失效；注：如在当月最后一天兑换则兑换的流量不生效<br/>
+				2、本流量产品仅限11.11-11.29日兑换，逾期不可兑换。<br/>
+				3、得到多个1111M流量兑换码，同一手机号码只可兑换一次。<br/>
+				4、因套餐属性及订购规则限制，可能存在部分号码无法领取或使用。<br/>
+			</p>
+			
+		</div>
+		<!-- 流量 -->
+		<div class="look-m clearfix">
+			<div class="look-left">
+				<img src="image/gift-m.png" width="100%">
+			</div>
+			<div class="look-right">
+				<p><b style="font-size:1.1em;">恭喜您获得1111M月有效流量包</b></p>
+				<p style="margin:.5% 0 1% 0;">您兑换话码为123456789012。</p>
+			</div>
+			<div class="m-btm">立即兑换</div><br/>
+			<p style="margin-top:2%;"> 	
+				温馨提示：<br/>
+				1、流量奖品为月有效流量兑换码，流量产品兑换后次日生效，当月有效，11月30日23:59失效；注：如在当月最后一天兑换则兑换的流量不生效<br/>
+				2、本流量产品仅限11.11-11.29日兑换，逾期不可兑换。<br/>
+				3、得到多个1111M流量兑换码，同一手机号码只可兑换一次。<br/>
+				4、因套餐属性及订购规则限制，可能存在部分号码无法领取或使用。<br/>
+			</p>
+			
+		</div>
+	</div>
+
+</body>
+</html>
+<script>
+
+	$(function() {
+
+		// 活动规则
+		$('.close').click(function(){
+			$('.rule-black,.rotate-gift-black,.look-gift-box,.promit-black,.look-black').hide();
+		})
+		$('.rule-btn').click(function(){
+			$('.rule-black').show();
+		})
+		// 查看奖品
+		$('.gift-btn').click(function(){
+			$('.look-black').show();
+
+		})
+
+
+		// 老虎机	
+		var isture = 0;
+		$('.begin-btn').click(function(){
+			if(isture) return; // 如果在执行就退出
+			isture = true; 
+		// 点击开始抽奖按钮按钮动图和图片替换  灯图片替换
+			$(this).css({'background':'url(image/begin-btn.png)','background-size':'100%'});
+			$('.game-border').css({'background':'url(image/border.gif)','background-size':'100%'})
+			var n1 =0;
+			var n2 =0;
+			var n3 =0;
+			var top1 = 0;
+			var top2 = 0;
+			var top3 = 0;
+			//var zhongjiang = [0,0,0] //手机
+			//var zhongjiang = [-104,-104,-104] // 魔盒 
+			var zhongjiang = [-208,-208,-208] // 流量
+			var t = setInterval(function(){
+				if(n1 >= 5 ){
+				    top1 = zhongjiang[0];
+				    clearInterval(t);
+				}
+				if(top1 <= -320){
+					top1 = 0;
+					n1 +=1;
+				}
+				
+				$('.game1').css('margin-top',top1 + "px");
+				top1 =  top1 - 10;
+			},10)
+
+			var ti = setInterval(function(){
+				if(n2 >= 6 ){
+					
+				    top2 = zhongjiang[1]
+				    clearInterval(ti);
+				}
+				if(top2 <= -320){
+					top2 = 0;
+					n2 +=1;
+				}
+				
+				$('.game2').css('margin-top',top2 + "px");
+				top2 =  top2 - 10;
+			},12)
+
+			var tim = setInterval(function(){
+				if(n3 >= 7){
+					top3 = zhongjiang[2]
+					$('.game3').css('margin-top',top3 + "px");
+					clearInterval(tim);
+
+					$('.game-border').css({'background':'url(image/border.png)','background-size':'100%'})
+					if(top1 == top2 && top1 == -10 && top3 == 0){ // 小米手机
+						$('.gift-phone').delay(200).fadeIn();
+					}if(top1 == top2 && top1 ==  -114 && top3 == -104){// 天猫魔盒
+						$('.gift-box').delay(200).fadeIn();
+					}if(top1 == top2 && top1 == -218 && top3 == -208){// 流量
+						$('.gift-m').delay(200).fadeIn();
+					}if(top1 != top2 || top1 != top3 - 10  || top2 != top3 - 10){
+						$('.gift-no').delay(200).fadeIn();
+					}
+				}
+				if(top3 <= -320){
+					top3 = 0;
+					n3 +=1;
+				}
+				
+				$('.game3').css('margin-top',top3 + "px");
+				top3 =  top3 - 10;
+			},14)
+			
+		})
+		// 查看奖品按钮
+		$('.gift-btn').click(function(){
+			$('.change-no').show();
+		})
+
+		// 滚动字幕
+		var  time ;
+		var t = 0;
+		time = setInterval(function(){
+			if(t == -900){
+				t = 25;
+			}
+			t = t - 25;
+			$('.prizename').css('margin-top',t + 'px');
+		},2000)
+			
+	
+
+		})
+</script>
+

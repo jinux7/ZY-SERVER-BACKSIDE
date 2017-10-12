@@ -1,0 +1,34 @@
+<style>
+	#smallModal3 {
+		padding-top: 15rem;
+		box-sizing: border-box;
+		height: 100%;
+	}
+	#smallModal3 div {
+		margin: 0 auto;
+		width: 11rem;
+		height: 9.187rem;
+	}
+	#smallModal3 p {
+		position: absolute;
+		top: 23rem;
+		width: 100%;
+		text-align: center;
+		color: #ffffff;
+
+	}
+</style>
+<div id="smallModal3">
+	<div>
+		真可惜~~差一丢丢就撕到大奖啦！
+	</div>
+	<p>
+		<span>知道了</span>
+	</p>
+</div>
+
+<script>
+	$('#smallModal3 p span').off().on('click',function(){
+		location.reload();
+	});
+</script>

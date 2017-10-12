@@ -1,0 +1,35 @@
+<style>
+	#smallModal4 {
+		padding-top: 15rem;
+		box-sizing: border-box;
+		height: 100%;
+	}
+	#smallModal4 div {
+		margin: 0 auto;
+		width: 11rem;
+		max-height: 7rem;
+    	overflow: scroll;
+	}
+	#smallModal4 p {
+		position: absolute;
+		top: 23rem;
+		width: 100%;
+		text-align: center;
+		color: #ffffff;
+
+	}
+</style>
+<div id="smallModal4">
+	<div>
+		恭喜您获得IPhone7/华为Mate9/ OPPO R9S/米家空气净化器/红米A4/小米盒子/小米充电宝兑换券一个！请点击页面“我的奖品”领取奖品并填写个人信息和邮寄地址。沃尊享微信工作人员会在7——15个工作日内与您确认邮寄地址。
+	</div>
+	<p>
+		<span>知道了</span>
+	</p>
+</div>
+
+<script>
+	$('#smallModal4 p span').off().on('click',function(){
+		location.reload();
+	});
+</script>

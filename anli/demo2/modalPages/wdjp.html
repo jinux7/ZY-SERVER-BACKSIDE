@@ -1,0 +1,129 @@
+
+	<style>
+
+		/*查看奖品*/
+		.look-k{padding:5px;height:4rem;width:90%;margin:0.5rem auto;color:#fff;border-bottom:1px solid #908275;background:none;}
+		.look-left{float:left;width:4.5rem;height:4.5rem;background:#ddd; border-radius: 2.25rem; overflow: hidden; margin: -0.5rem 0 0 0.5rem;}
+		.look-right{line-height:1rem;color:#f6dfcd;font-size:0.8em;float: right;width:65%;margin-left:5%;height:auto;}
+		.look-right b{font-size: 1.1em;color:#fff;}
+		.order-btn{display: inline-block;width:90%;border:1px solid #edcb4f;color:#e9e949;height:1.25rem;line-height:1.25rem;text-align: center;border-radius:6px;margin-top:10px;}
+		
+		/*填写信息*/
+		.info-box{display:none;color:#ff4d3e; width:90%;padding: 0 5%;line-height:1rem;font-size: 0.9em}
+		.info-box h3{color:#fdf1e5;text-align: center; margin: 0.8rem 0;}
+		.info-box p{position: relative;margin:0 0 0.5rem;background:#fff;}
+		.info-box p span{color:red;position: absolute;top:0.2rem;right:0.15rem;display: none;}
+		.info-box input{width:100%;height:1.25rem;line-height: 1.55rem;}
+		.yellow{color:#ffd33e;}
+		.info-btn span{margin-top:0.75rem;border-radius:6px;display:inline-block;width:40%;text-align: center;height:1.25rem;line-height: 1.25rem}
+		.cancal-btn{border:1px solid #999999;color: #999999;margin-left:6%;}
+		.sumbit-btn{border:1px solid #eaea4b;color: #edcb4d;margin-left:5%;}
+		#modal_wdjp .title {
+			margin-top: 3.687rem;
+			margin-bottom: 2rem;
+			text-align: center;
+		}
+		#modal_wdjp .title img {
+			width: 7.43rem;
+		}
+	</style>
+
+	<!-- 查看奖品 -->
+	<div id="modal_wdjp">
+		<div class="title">
+			<img src="./images/wdjp_title.png" alt="">
+		</div>
+		<div class="look-black" >
+			<div id="prizelist">
+				<div class="look-k ">
+						<div class="look-left"><img src="./images/jiangpin.png" width="120%"></div>
+						<div class="look-right">
+							<b></b><br>
+							<i></i>
+							<span class="order-btn">领取</span>
+						</div>
+						<div style="clear:both;"></div>
+				</div>
+				<div class="info-box">
+					<h3>填写邮寄信息</h3>
+					<p><input type="text" id="name" placeholder="请输入获奖人姓名" ><span>x</span></p>
+					<p><input type="text" id="telNumber" placeholder="请输入获奖人电话"maxlenght="11"><span>x</span></p>
+					<p><input type="text" id="idNumber" placeholder="请输入获奖人身份证号" maxlenght="21"><span>x</span></p>
+					<p><input type="text" id="address" placeholder="请输入邮寄地址"><span>x</span></p>
+					* 因奖品比较贵重，出于安全原因完成提交时会<span class="yellow">消耗1积分</span>验证身份，特此提示！
+					<div class="info-btn">
+						<span class="cancal-btn"  >取消</span>
+						<span class="sumbit-btn" id="infoSubmit">提交</span>
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+<script>
+	$(function(){
+
+		//向页面载入奖品信息
+		var jiangpinInfo = ['iPhone 7 128G (玫瑰金)','抽奖日期:2016/12/24 17:20:32'];
+		$('#prizelist .look-right b').html(jiangpinInfo[0]);
+		$('#prizelist .look-right i').html(jiangpinInfo[1]);
+	// 输入框验证
+	function valSubmit(){
+		// 姓名不能为空 不能为空格
+		var name = $("#name").val();
+		if(name.length == 0 || name.indexOf(" ") >= 0){
+			$("#name").next().show();
+			return;
+		}else{
+			$("#name").next().hide();
+		}
+		// 电话不能为空 不能为空格
+		var telNumber= $("#telNumber").val();
+		if(telNumber.length == 0 || telNumber.indexOf(" ") >= 0){
+			$("#telNumber").next().show();
+			return;
+		}else{
+			$("#telNumber").next().hide();
+		}
+		// 身份证不能为空 不能为空格
+		var idNumber = $("#idNumber").val();
+		if(idNumber.length == 0 || idNumber.indexOf(" ") >= 0){
+			$("#idNumber").next().show();
+			return;
+		}else{
+			$("#idNumber").next().hide();
+		}
+		// 地址不能为空 不能为空格
+		var address = $("#address").val();
+		if(address.length == 0 || address.indexOf(" ") >= 0){
+			$("#address").next().show();
+			return;
+		}else{
+			$("#address").next().hide();
+		}
+	}
+  	/**
+     * clearForm 
+     *  用于清除表单内容
+     */
+    function clearForm() {
+        $("input").val("");
+    };
+    clearForm();
+
+	$("#infoSubmit").click(function(){
+		valSubmit();
+
+	})
+		
+	$(".order-btn").click(function(){
+		$(".info-box").show();
+	})
+	$(".cancal-btn").click(function(){
+		$(".info-box").hide();
+	})
+})
+</script>

@@ -1,0 +1,35 @@
+<style>
+	#smallModal1 {
+		padding-top: 15rem;
+		box-sizing: border-box;
+		height: 100%;
+	}
+	#smallModal1 div {
+		margin: 0 auto;
+		width: 11rem;
+		height: 9.187rem;
+	}
+	#smallModal1 p {
+		position: absolute;
+		top: 23rem;
+		width: 100%;
+		text-align: center;
+		color: #ffffff;
+
+	}
+</style>
+<div id="smallModal1">
+	<div>
+		对不起，您不是沃尊享VIP用户，无法参与当前游戏，感谢您的关注。
+	</div>
+	<p>
+		<span>知道了</span>
+	</p>
+</div>
+
+<script>
+	$('#smallModal1 p span').off().on('click',function(){
+		//$('#modal').remove();
+		alert('跳转地址');
+	});
+</script>

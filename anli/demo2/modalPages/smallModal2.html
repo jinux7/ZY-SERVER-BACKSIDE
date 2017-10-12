@@ -1,0 +1,34 @@
+<style>
+	#smallModal2 {
+		padding-top: 15rem;
+		box-sizing: border-box;
+		height: 100%;
+	}
+	#smallModal2 div {
+		margin: 0 auto;
+		width: 11rem;
+		height: 9.187rem;
+	}
+	#smallModal2 p {
+		position: absolute;
+		top: 23rem;
+		width: 100%;
+		text-align: center;
+		color: #ffffff;
+
+	}
+</style>
+<div id="smallModal2">
+	<div>
+		对不起，您当前不足10积分，不符合抽奖标准，快去订购流量套餐获得更多积分来抽奖吧！
+	</div>
+	<p>
+		<span>去订购流量套餐</span>
+	</p>
+</div>
+
+<script>
+	$('#smallModal2 p span').off().on('click',function(){
+		alert('跳转地址');
+	});
+</script>

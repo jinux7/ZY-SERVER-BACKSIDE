@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>抢红包！抢3G流量！</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<meta content="email=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link type="text/css" rel="stylesheet" href="css/common.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script src="js/viewport.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/zepto.touch.js"></script>
+</head>
+
+<body id="">
+    <!--load页面-->
+    <div class="loading">
+        <img class="logo" src="images/logo.png" width="26%">
+        <div class="scroll-box">
+            <div class="scroll-bar"></div>
+            <div class="scroll-bg"></div>
+            <div class="load-redbag"></div>
+            <div class="load-head"></div>
+        </div>
+    </div>
+
+    <!--游戏规则开始页面-->
+    <div class="i-content">
+        <div class="i-topbtn">
+            <span id="btn_hdgz">活动规则</span>
+            <span id="btn_wdjp">我的奖品</span>
+        </div>
+        <div class="begin-btnbox">
+            <span id="btn_startGame">开始游戏</span>
+            <!--<p>已经有<b>xx</b>人参加活动</p>-->
+        </div>
+    </div>
+    
+    <!--活动规则-->
+    <div id='hdgz' class="modal_bg_wrap">
+        <div class="content modal_bg_inner">
+            <span class="close">&#10005</span>
+            <div>
+                <h2>活动规则</h2>
+                <p>1.活动时间：1月27日－2月2日（除夕—大年初六）</p>
+                <p>2.在30秒内尽可能多的点击页面中的红包，每个红包对应不同的分数。累积得分超过100分即有机会获得3G流量兑换码</p>
+                <p>3.每日限量1000个免费3G流量兑换码，先到先得</p>
+                <p>4.每位用户每日可多次进行游戏，但每日只有一次获得3G流量兑换码的机会</p>
+                <p>5.快速进入游戏页面可在辽宁联通微信公众平台输入“春节”或“红包”</p>
+            </div>
+        </div>
+    </div>
+
+    <!--我的奖品-->
+    <div id='wdjp'>
+        <div class="wdjp_inner">
+            <span class="close">&#10005</span>
+            <h2>我的奖品</h2>
+            <div class="wdjp_jpList">
+                <!--<div class="myPresent">
+                    <h3>3G流量大礼包</h3>
+                    <b>兑换码：asdfgghjklll</b>
+                    <b>有效日期:2017/1/20-2017/2/20</b>
+                </div>-->
+            </div>
+            <p class="btn_p"><a href="#">去兑换专区</a></p>
+            <h2>兑换规则</h2>
+            <div class="rule_text">
+                <p>1.兑换方法：您可进入辽宁联通微信公众平台点击惊喜优惠——兑换专区——流量礼包兑换专区，进行兑换。</p>
+                <p>2.本流量奖品为日有效流量包兑换码，流量产品兑换后立即生效，当日23:59失效，不参与结转，多个流量兑换码兑换后不参与叠加。</p>    
+                <p>3.流量兑换码有效期为1月27日—2月2日，逾期不能兑换。</p>
+                <p>4.流量产品仅限沃派套餐用户及46元以上（含46元）标准3G用户和76元以上（含76元）标准4G用户才可使用。</p>
+                <p>5.所有流量产品均为辽宁省内流量，不可出省使用。</p>
+                <p>6.每个手机号码只能领取一次流量产品，如从其他渠道获得相同流量产品，则不能重复获得。</p>
+            </div>
+            
+        </div>
+        <!--<div class="content modal_bg_inner">
+            <span class="close">&#10005</span>
+            <div>
+                <h2>我的奖品</h2>
+                <strong class="myPresent">
+                    <b>兑换码：asdfgghjklll</b>
+                    <b>有效日期:2017/1/20-2017/2/20</b>
+                </strong>
+                        
+                <h3>兑换规则</h3>
+                <p>每日限定1000个3g流量兑换码，先到先得哦!</p>
+                <p>每日限定1000个3g流量兑换码，先到先得哦!</p>
+            </div>
+        </div>-->
+    </div>
+    <!--游戏结束获奖-->
+    <div id="hj">
+        <div class="content modal_bg_inner">
+            <div>
+                <h2>
+                    <div class="score">
+                        <b>得分</b><br>
+                        <i>30</i>
+                    </div>
+                </h2>
+                <strong class="myPresent">
+                    <strong>3G流量大礼包</strong>
+                    <b></b>
+                    <b></b>
+                </strong>
+                <p class="btn_p"><a href="#" id='btn_hj_ljdh'>立即兑奖</a></p>
+                <p class="btn_p"><a href="javascript:;" class="gameAgain">再玩一次</a></p>
+                <p class="btn_p"><a href="#">超值流量</a></p>                
+            </div>
+        </div>
+    </div>
+    <!--游戏结束未获奖-->
+    <div id="whj">
+        <div class="content modal_bg_inner">
+            <div>
+                <h2>
+                    <div class="score">
+                        <b>得分</b><br>
+                        <i>10</i>
+                    </div>
+                </h2>
+                <strong class="myPresent">
+                    <strong style="left: 4.2rem;">未中奖</strong>
+                    <b>亲，您咋才来啊！3G流量早被领完啦！明天一定记得早来啊！</b>
+                    <b></b>
+                </strong>
+                <p class="btn_p"><a href="javascript:;" class="gameAgain">再玩一次</a></p>
+                <p class="btn_p"><a href="#">超值流量</a></p>                
+            </div>
+        </div>
+    </div>
+
+    <!--玩游戏页面-->
+	<div id="panel">
+    	<a href="javascript:;" data-val="1"><img src="images/hongbao.png" /><span></span></a>
+        <a href="javascript:;" data-val="2"><img src="images/hongbao.png" /><span></span></a>
+        <a href="javascript:;" data-val="3"><img src="images/hongbao.png" /><span></span></a>
+        <a href="javascript:;" data-val="5"><img src="images/hongbao.png" /><span></span></a>
+        <a href="javascript:;" data-val="6"><img src="images/hongbao.png" /><span></span></a>
+        <a href="javascript:;" data-val="1"><img src="images/hongbao.png" /><span></span></a>
+        <a href="javascript:;" data-val="1"><img src="images/hongbao.png" /><span></span></a>
+        <a href="javascript:;" data-val="1"><img src="images/hongbao.png" /><span></span></a>
+        <p class="time">30秒</p>
+        <p class="showScore">0</p>      
+    </div>
+</body>
+<script src="js/controller.js"></script>
+</html>
+
